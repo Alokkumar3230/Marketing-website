@@ -1,0 +1,10 @@
+{
+  "description": "This multi-page marketing site showcases a fictional B2B software company, offering detailed product information, pricing, and contact options to attract potential clients.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

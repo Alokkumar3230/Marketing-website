@@ -1,0 +1,74 @@
+@import 'https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap';
+@import 'tailwindcss';
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 4px);
+}
+
+:root {
+  --background: #F5F4F0;
+  --foreground: #1C1B18;
+  --card: #FFFFFF;
+  --card-foreground: #1C1B18;
+  --primary: #C8341A;
+  --primary-foreground: #FFFFFF;
+  --secondary: #2D2C29;
+  --secondary-foreground: #F5F4F0;
+  --muted: #ECEAE4;
+  --muted-foreground: #6B6860;
+  --accent: #C8341A;
+  --accent-foreground: #FFFFFF;
+  --border: #D8D6D0;
+  --ring: #C8341A;
+  --radius: 2px;
+
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--foreground);
+  background-color: var(--background);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--muted-foreground); }
+
+.font-display {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+.font-mono {
+  font-family: 'DM Mono', 'Courier New', monospace;
+}
